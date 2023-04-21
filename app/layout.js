@@ -1,4 +1,4 @@
-import Navigation from './components/Navigation'
+import Header from './components/Header'
 import './globals.css'
 
 export const metadata = {
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navigation />
+        <Header />
         {children}
         </body>
     </html>
