@@ -3,8 +3,8 @@ import NavButton from "./NavButton";
 function Navigation() {
   return (
     <>
-      <NavButton />
-      <nav className="hidden">
+      <NavButton  />
+      <nav className="hidden sm:block">
         <ul>
           <Link href="/about">Sobre mi</Link>
           <Link href="/works">Projectos</Link>
