@@ -18,7 +18,7 @@ function NavButton() {
         onClick={() => setClose(!close)}
       />
       {!close && (
-        <nav className="fixed sm:hidden top-[64px] inset-x-0 bg-red-400">
+        <nav className="fixed sm:hidden top-[64px] inset-x-0 bg-nav border-t-[0.5px] border-black p-5">
           <ul className="flex flex-col gap-5 justify-center items-center">
             <Link onClick={() => setClose(!close)} href="/about">Sobre mi</Link>
             <Link onClick={() => setClose(!close)} href="/works">Projectos</Link>

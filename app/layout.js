@@ -22,7 +22,7 @@ const libre_thin = Libre_Baskerville({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${libre_Baskerville.variable}  ${libre_thin.variable} font-libre`} >
-      <body className="bg-[#5C5C91] text-white">
+      <body className="bg-base text-white">
         <Header />
         {children}
       </body>
