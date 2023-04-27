@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import "./globals.css";
 import {Libre_Baskerville} from "next/font/google";
+import SocialNav from "./components/SocialNav";
 
 export const metadata = {
   title: "My portfolio",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className="bg-base text-white">
         <Header />
         {children}
+        <SocialNav />
       </body>
     </html>
   );
