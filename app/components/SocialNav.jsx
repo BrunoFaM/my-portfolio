@@ -9,39 +9,45 @@ import { useState } from "react";
 
 function SocialNav() {
   const [open, setOpen] = useState(false);
-  
+
   function handleClick() {
     setOpen(!open);
   }
   return (
-    <nav className="bg-slate-500 inline-block">
-      <ul>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Image alt="" src={linkedinIco} width={35} height={35}></Image>
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Image alt="" src={gitIco} width={35} height={35}></Image>
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Image alt="" src={mailIco} width={35} height={35}></Image>
-          </a>
-        </li>
-      </ul>
+    <nav className="bg-slate-500 absolute inline-block w-max p-1  bottom-2 right-2">
       {open ? (
-        <Image
-          onClick={handleClick}
-          alt=""
-          src={closeIco}
-          width={30}
-          height={30}
-        ></Image>
+        <>
+          <ul className="flex flex-col items-center justify-center">
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <Image alt="" src={linkedinIco} width={35} height={35}></Image>
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <Image alt="" src={gitIco} width={35} height={35}></Image>
+              </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <Image alt="" src={mailIco} width={35} height={35}></Image>
+              </a>
+            </li>
+            <li>
+              <Image
+                className="mb-0 pb-0"
+                onClick={handleClick}
+                alt=""
+                src={closeIco}
+                width={30}
+                height={30}
+              ></Image>
+            </li>
+          </ul>
+        </>
       ) : (
         <Image
+          className="mb-0 pb-0"
           onClick={handleClick}
           alt=""
           src={openIco}
