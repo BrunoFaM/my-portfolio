@@ -12,8 +12,8 @@ module.exports = {
         libre: ["var(--font_libre_thin)"],
       },
       colors: {
-        base: "#3865C7",
-        nav: "#16367A",
+        base: "#000000",
+        nav: "#000000",
       },
     },
   },

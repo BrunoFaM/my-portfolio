@@ -14,7 +14,7 @@ function SocialNav() {
     setOpen(!open);
   }
   return (
-    <nav className="bg-slate-500 absolute inline-block w-max p-1  bottom-2 right-2">
+    <nav className="bg-black absolute inline-block w-max p-1  bottom-2 right-2">
       {open ? (
         <>
           <ul className="flex flex-col items-center justify-center">

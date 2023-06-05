@@ -11,7 +11,7 @@ function NavButton() {
     <>
       <Image
         alt=""
-        className="sm:hidden"
+        className="sm:hidden "
         src={close ? barIco : closeIco}
         width={30}
         height={30}
