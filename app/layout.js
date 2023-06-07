@@ -22,8 +22,8 @@ const libre_thin = Libre_Baskerville({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${libre_Baskerville.variable}  ${libre_thin.variable} font-libre`} >
-      <body className="bg-base text-white">
+    <html lang="en" className={`${libre_Baskerville.variable}  ${libre_thin.variable} `} >
+      <body className="bg-base text-white font-libre lg:pt-2  lg:pl-5 lg:pr-5">
         <Header />
         {children}
         <SocialNav />

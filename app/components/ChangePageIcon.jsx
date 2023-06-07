@@ -15,7 +15,7 @@ function ChangePageIcon({ direction, url, hacia }) {
     icon = rightArrow; 
   }
   return (
-    <div className={`absolute top-1/2 m-2 right-0 `}>
+    <div className={`absolute  top-1/2 m-2 right-0 animate-bounce  p-2 md:hidden`}>
       <Link href={url} title={hacia}>
         <Image
           alt="icono"
