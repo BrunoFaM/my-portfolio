@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-function contactPage() {
+function ContactSection() {
   return (
     <main>
       <form className="bg-gray-500 text-black flex flex-col p-4 gap-2" action="">
@@ -44,7 +44,7 @@ function contactPage() {
         <button type="submit">Enviar</button>
       </form>
     </main>
-  );
+  )
 }
 
-export default contactPage;
+export default ContactSection
